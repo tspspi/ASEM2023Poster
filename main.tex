@@ -1,0 +1,230 @@
+\documentclass[final]{beamer}
+
+\input{style.tex}
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amsthm,amssymb,latexsym}
+\usepackage{multirow}
+\usepackage[orientation=portrait,size=a0,scale=1.15]{beamerposter}
+
+\usebackgroundtemplate%
+{
+    \includegraphics[width=\paperwidth,height=0.5\paperheight]{figures/TU_building.pdf}
+}
+
+\title{Towards driving Quantum Systems in cryogenic environments\hspace*{1cm} \\ with the Near-Field of Modulated Electron Beams}
+\author{\underline{T. Spielauer$^{1}$}, M. Kolb$^{1}$, T. Weigner$^{1}$, J. Toyfl$^{1}$, G. Boero$^{2}$, P. Haslinger$^{1}$ }
+\def\correspondingAuthorEmail{thomas.spielauer@tuwien.ac.at}
+\def\website{}
+\institute[]{
+  {\small
+  $^{1}$VCQ, Technische Universität Wien, Atominstitut, Stadionallee 2, 1020 Vienna, Austria; $^{2}$EPFL, BM 3110 Station 17, CH-1015 Lausanne, Switzerland
+  }
+}
+
+
+\begin{document}
+\begin{frame}[fragile]{}
+  \pgfsetfillopacity{0.9}
+  \begin{block}{\large Abstract}
+    Coherent electromagnetic control of quantum systems is usually done by
+    electromagnetic radiation - which does not permit addressing single site-selected
+    quantum systems, especially in the microwave range. In our proof of concept
+    experiment we want to couple for the first time the non-radiative electromagnetic
+    near-field of a spatially modulated electron beam to a quantum system in
+    a coherent way as has been proposed lately.  As the quantum system we
+    use the unpaired electron spins of a free radical organic sample (Koelsch radical
+    \- $\alpha,\gamma$-Bisdiphenylene-$\beta$-phenylallyl) that is excited via the
+    near-field of the aloof electron beam. The readout of the spin excitation
+    resembles a classic continuous wave electron spin resonance experiment and is
+    done inductively via a microcoil using a lock-in amplifier.
+
+    The long term perspective of this experiment is the ability to coherently drive
+    and investigate quantum systems in a spatial volume way below the diffraction
+    limit of traditional electromagnetic wave based excitation schemes. The spatially
+    confined excitation using an electron beam could also be realized within
+    an electron microscope. Within the last year we have been able to improve
+    the setup, couple the electron beam to the microcoil and reduce noise sources
+    as well as started preparations to cool down the microcoil setup to cryogenic
+    temperatures for enhanced signal to noise ratio.
+  \end{block}
+  \begin{columns}[T]
+    \begin{column}{.49\linewidth}
+      \begin{block}{\large The Quantum Klystron}
+        We call our experiment the \textit{Quantum Klystron}, referencing an established
+        technology, the Klystron.
+
+        \begin{columns}
+          \begin{column}{0.4\columnwidth}
+              \includegraphics[width=\columnwidth]{figures/klystron.pdf}
+          \end{column}
+          \begin{column}{0.6\columnwidth}
+            \begin{center}
+              {\large \textbf{Klystron}}
+            \end{center}
+
+            \begin{itemize}
+              \item Linear beam vacuum tube invented in 1935, used as RF and microwave amplifier
+              \item Electrons accelerated into a linear tube
+              \item Velocity modulation in buncher cavity by input signal
+              \item Density modulated charge carrier wave forms through driftspace
+              \item Outcoupling via catcher cavity
+            \end{itemize}
+          \end{column}
+        \end{columns}
+        \begin{columns}
+          \begin{column}{0.4\columnwidth}
+            \includegraphics[width=\columnwidth]{figures/zeeman.pdf}
+          \end{column}
+          \begin{column}{0.6\columnwidth}
+            \begin{center}
+              {\large \textbf{Quantum Klystron}}
+            \end{center}
+
+            \begin{itemize}
+              \item Replace catcher cavity with 2 level quantum system
+              \item Drive system using \textit{non-radiative electromagnetic near-field} of
+                    electron beam.
+              \item Either modulate in
+              \begin{itemize}
+                  \item \textit{time domain} - bunching / density modulation
+                  \item \textit{spatial domain} - deflection
+              \end{itemize}
+              \item Ability to draw arbitrary potentials (drive optical dipole, \\quadrupole, $\ldots$ transitions, spin systems, $\ldots$)
+            \end{itemize}
+          \end{column}
+        \end{columns}
+      \end{block}
+
+      \begin{block}{\large Electron spin resonance with electron beams}
+        Our experiment resembles an electron spin resonance experiment. In contrast to
+        classic electron spin resonance where systems are excited using microwaves
+        we use the \textit{non-radiative electromagnetic near-field} of an electron beam.
+
+        \begin{columns}
+          \begin{column}{0.6\columnwidth}
+            \includegraphics[width=0.67\columnwidth]{figures/bdpa.png}
+          \end{column}
+          \begin{column}{0.4\columnwidth}
+            \includegraphics[width=\columnwidth]{figures/esrsetuppcb.jpg}
+          \end{column}
+        \end{columns}
+
+        \begin{columns}
+          \begin{column}{0.6\columnwidth}
+            \begin{itemize}
+              \item Koelsch radical \- $\alpha,\gamma$-Bisdiphenylene-$\beta$-phenylallyl
+              \item Unpaired spin $\to$ high spin density
+              \item Excitation with microwave works at room temperature
+              \item RF excitation background by radiated fields $\to$ differential measurements with and without electron beam required
+            \end{itemize}
+          \end{column}
+          \begin{column}{0.4\columnwidth}
+            \includegraphics[width=\columnwidth]{figures/eprsignal.png}
+          \end{column}
+        \end{columns}
+      \end{block}
+
+      \begin{block}{\large Temperature dependence}
+        \begin{columns}
+          \begin{column}{0.4\columnwidth}
+            \includegraphics[width=\columnwidth]{figures/tempn2n1.png}
+          \end{column}
+          \begin{column}{0.6\columnwidth}
+            \begin{itemize}
+              \item Thermal population of spin states heavily temperature dependent
+              \item $\frac{n_2}{n_1} = e^{-\frac{Delta E}{k_B T}} = \left(e^{- \frac{\Delta E}{k_B}}\right)^\frac{1}{T}$
+              \item Moving to $77K$ (liquid nitrogen): \\ expect $8.9nV$ signal \\ expected gain $\approx 4$, SNR gain $\approx 7.7$ \\ simple to realize
+              \item Moving to $4K$ (liquid helium): \\ expect $1.7\mu V$ signal \\ expected gain $\approx 75$, SNR gain $\approx 650$ \\ challenging to realize
+            \end{itemize}
+          \end{column}
+        \end{columns}
+      \end{block}
+
+      \begin{block}{\large Contact}
+          Thomas Spielauer \\ 
+          Technische Universität Wien, Atominstitut \\ 
+          thomas.spielauer@tuwien.ac.at
+      \end{block}
+    \end{column}
+
+    % -------------------------------------------------------------
+
+    \begin{column}{.49\linewidth}
+      \begin{block}{\large Experimental setup}
+        \begin{columns}
+          \begin{column}{0.4\columnwidth}
+            \includegraphics[width=\columnwidth]{figures/cryoquak02.png}
+          \end{column}
+          \begin{column}{0.6\columnwidth}
+              \begin{itemize}
+                \item Running in vacuum at $10^{-8}$ mbar or better
+                \item Electron source (Barium-Strontium cathode, electrostatic beam deflection)
+                    with $\geq 10 \mu A$ beam current at up to $2.2 kV$ acceleration voltage
+                \item Beam modulation frequency up to $\approx 250 MHz$
+                \item Camera imaging of phosphor screens to determine and monitor beam parameters
+                \item Cooling with liquid nitrogen reservoire and copper coldfinger
+              \end{itemize}
+          \end{column}
+        \end{columns}
+      \end{block}
+
+      \begin{block}{\large Readout and radio frequency setup}
+        \begin{columns}
+          \begin{column}{0.6\columnwidth}
+            \begin{itemize}
+              \item Using carrier PCB thermally coupled to a copper coldfinger. The
+                    PCB contains the microcoils as well as en RF impedance match,
+                    copper areas to thermally couple to the coldfinger and high voltage
+                    protection.
+              \item We use a second coil for reference measurements
+              \item Sample is positioned inside microcoil (2 windings, $2.58$ x $1.14mm$
+                    outer diameter, $1.5$ x $0.5mm$ sample area)
+            \end{itemize}
+          \end{column}
+          \begin{column}{0.4\columnwidth}
+            \includegraphics[width=\columnwidth]{figures/pcb01.jpg}
+
+            \includegraphics[width=\columnwidth]{figures/pcb02.jpg}
+          \end{column}
+        \end{columns}
+
+        \begin{columns}
+          \begin{column}{0.6\columnwidth}
+            \includegraphics[width=\columnwidth]{figures/rfsetup.png}
+          \end{column}
+          \begin{column}{0.4\columnwidth}
+            \begin{itemize}
+              \item Using two independent channels of an AD9959 based DDS for
+                  local oscillator and beam deflection (excitation).
+              \item Applying additional $5.123 kHz$ modulation field $B_m$ in
+                  same direction as $B_0$
+              \item Performing lock-in detection
+            \end{itemize}
+          \end{column}
+        \end{columns}
+      \end{block}
+
+      \begin{block}{\large First tests on test setup}
+        We did some initial tests on our setup by simply cooling a PCB containing our
+        BDPA sample in a liquid nitrogen bath. The sample then was excited using microwaves
+        coupled in via a directional coupler as in a traditional setup. We saw the
+        expected increase in signal amplitude as well as a shift of our impedance match
+        that we have to compensate for.
+      \end{block}
+
+      \begin{block}{\large References \& Acknowledgements}
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+        voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+        clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+        amet.
+      \end{block}
+
+    \end{column}
+
+  \end{columns}
+
+\end{frame}
+\end{document}
