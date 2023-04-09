@@ -1,5 +1,5 @@
 \frametitle{}
-\pgfsetfillopacity{0.9}
+\pgfsetfillopacity{0.80}
   \begin{block}{\large Abstract}
     Coherent electromagnetic control of quantum systems is usually done by
     electromagnetic radiation - which does not permit addressing single site-selected
@@ -157,7 +157,7 @@
                     PCB contains the microcoils as well as en RF impedance match,
                     copper areas to thermally couple to the coldfinger and high voltage
                     protection.
-              \item We use a second coil for reference measurements
+              \item We use a second coil for reference measurements.
               \item Sample is positioned inside microcoil (2 windings, $2.58$ x $1.14mm$
                     outer diameter, $1.5$ x $0.5mm$ sample area)
             \end{itemize}
@@ -179,7 +179,7 @@
                   local oscillator and beam deflection (excitation).
               \item Applying additional $5.123 kHz$ modulation field $B_m$ in
                   same direction as $B_0$
-              \item Performing lock-in detection
+              \item Performing lock-in detection for noise suppression
             \end{itemize}
           \end{column}
         \end{columns}
