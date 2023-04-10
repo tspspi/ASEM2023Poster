@@ -114,8 +114,8 @@
           \begin{column}{0.6\columnwidth}
             \begin{itemize}
               \item Room temperature: \\ expect $22.9 nV$ signal, $185.83 \sqrt{Hz}$ SNR
-              \item Moving to $77K$ (liquid nitrogen): \\ expect $89 nV$ signal \\ expected gain $\approx 4$, SNR gain $\approx 7.7$ \\ simple to realize, our choice
-              \item Moving to $4K$ (liquid helium): \\ expect $1.7\mu V$ signal \\ expected gain $\approx 75$, SNR gain $\approx 649.5$ \\ challenging to realize
+              \item Moving to $77K$ (liquid nitrogen): \\ expect $89 nV$ signal, $1221.46 \sqrt{Hz}$ SNR \\ expected gain $\approx 4$, SNR gain $\approx 7.7$ \\ simple to realize, our choice
+              \item Moving to $4K$ (liquid helium): \\ expect $1.7\mu V$ signal, $103163.45 \sqrt{Hz}$ SNR \\ expected gain $\approx 75$, SNR gain $\approx 649.5$ \\ challenging to realize
             \end{itemize}
           \end{column}
         \end{columns}
