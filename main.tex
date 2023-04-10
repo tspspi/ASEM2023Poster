@@ -33,9 +33,9 @@
     quantum systems, especially in the microwave range. In our proof of concept
     experiment we want to couple for the first time the non-radiative electromagnetic
     near-field of a spatially modulated electron beam to a quantum system in
-    a coherent way as has been proposed lately.  As the quantum system we
+    a coherent way as has been proposed lately[1].  As the quantum system we
     use the unpaired electron spins of a free radical organic sample (Koelsch radical
-    \- $\alpha,\gamma$-Bisdiphenylene-$\beta$-phenylallyl) that is excited via the
+    - $\alpha,\gamma$-Bisdiphenylene-$\beta$-phenylallyl) that is excited via the
     near-field of the aloof electron beam. The readout of the spin excitation
     resembles a classic continuous wave electron spin resonance experiment and is
     done inductively via a microcoil using a lock-in amplifier.
@@ -133,19 +133,23 @@
         
         $$\frac{n_2}{n_1} = e^{-\frac{\Delta E}{k_B T}} = \left(e^{- \frac{\Delta E}{k_B}}\right)^\frac{1}{T}$$
 
+        \vskip1ex
         \begin{columns}
           \begin{column}{0.4\columnwidth}
             \includegraphics[width=\columnwidth]{figures/tempn2n1.pdf}
           \end{column}
           \begin{column}{0.6\columnwidth}
             \begin{itemize}
-              \item Moving to $77K$ (liquid nitrogen): \\ expect $8.9nV$ signal \\ expected gain $\approx 4$, SNR gain $\approx 7.7$ \\ simple to realize, our choice
+              \item Room temperature: \\ expect $22.9 nV$ signal, $185.83 \sqrt{Hz}$ SNR
+              \item Moving to $77K$ (liquid nitrogen): \\ expect $89 nV$ signal \\ expected gain $\approx 4$, SNR gain $\approx 7.7$ \\ simple to realize, our choice
               \item Moving to $4K$ (liquid helium): \\ expect $1.7\mu V$ signal \\ expected gain $\approx 75$, SNR gain $\approx 649.5$ \\ challenging to realize
-              \item Averaging increases the SNR by $\sqrt{N}$ for N iterations. Doubling SNR of the system decreases the number of required averages by a factor of four. A gain of 4 decreases measurement time by a factor of 16,
-              a gain of 650 would decrease measurement time by about half a million
             \end{itemize}
           \end{column}
         \end{columns}
+        \vskip1ex
+
+        Averaging increases the SNR by $\sqrt{N}$ for N iterations. Doubling SNR of the system decreases the number of required averages by a factor of four. A gain of 4 decreases measurement time by a factor of 16,
+        a gain of 650 would decrease measurement time by about half a million
       \end{block}
 
 %%      \begin{block}{\large Contact}
@@ -165,12 +169,16 @@
           \end{column}
           \begin{column}{0.6\columnwidth}
               \begin{itemize}
-                \item Running in vacuum at $10^{-8}$ mbar or better
-                \item Electron source (Barium-Strontium cathode, electrostatic beam deflection)
-                    with $\geq 10 \mu A$ beam current at up to $2.2 kV$ acceleration voltage
-                \item Beam modulation frequency up to $\approx 250 MHz$
-                \item Camera imaging of phosphor screens to determine and monitor beam parameters
-                \item Cooling with liquid nitrogen reservoire and copper coldfinger
+                \item The experiment runs in vacuum at $10^{-8}$ mbar or better
+                \item As electron source we use a Barium-Strontium cathode, the beam is steered
+                    by electrostatic beam deflection. The source provides $\geq 10 \mu A$ beam
+                    current at up to $2.2 kV$ acceleration voltage.
+                \item The beam modulation frequency is up to $\approx 250 MHz$
+                \item Camera imaging from two directions of phosphor screens inside the
+                    chamber and phosphor coated areas to determine and monitor beam
+                    parameters.
+                \item Cooling is done with liquid nitrogen from a reservoire on top
+                    via a copper coldfinger through a teflon insulated steel pipe.
               \end{itemize}
           \end{column}
         \end{columns}
@@ -180,13 +188,13 @@
         \begin{columns}
           \begin{column}{0.6\columnwidth}
             \begin{itemize}
-              \item Using carrier PCB thermally coupled to a copper coldfinger. The
-                    PCB contains the microcoils as well as en RF impedance match,
-                    copper areas to thermally couple to the coldfinger and high voltage
-                    protection.
-              \item We use a second coil for reference measurements.
-              \item Sample is positioned inside microcoil (2 windings, $2.58$ x $1.14mm$
-                    outer diameter, $1.5$ x $0.5mm$ sample area)
+              \item We are using a carrier PCB thermally coupled to a copper coldfinger.
+                    The PCB contains the microcoils as well as an RF impedance match,
+                    copper areas and thermal vias to thermally couple to the coldfinger
+                    and high voltage protection via an RF choke.
+              \item We plan to use a second coil for reference measurements.
+              \item The BDPA sample is positioned inside the microcoil (2 windings, $2.58$ x $1.14mm$
+                    outer diameter, $1.5$ x $0.5mm$ sample area) in a milled pocket.
             \end{itemize}
           \end{column}
           \begin{column}{0.4\columnwidth}
@@ -202,11 +210,11 @@
           \end{column}
           \begin{column}{0.4\columnwidth}
             \begin{itemize}
-              \item Using two independent channels of an AD9959 based DDS for
+              \item We are using two independent channels of an AD9959 based DDS for
                   local oscillator and beam deflection (excitation).
               \item Applying additional $5.123 kHz$ modulation field $B_m$ in
                   same direction as $B_0$
-              \item Performing lock-in detection for noise suppression
+              \item Performing lock-in detection for better noise suppression
             \end{itemize}
           \end{column}
         \end{columns}
@@ -214,18 +222,34 @@
 
       \begin{block}{\large First tests on test setup}
         We did some initial tests on our setup by simply cooling a PCB containing our
-        BDPA sample in a liquid nitrogen bath. The sample then was excited using microwaves
-        coupled in via a directional coupler as in a traditional setup. We saw the
-        expected increase in signal amplitude as well as a shift of our impedance match
-        that we have to compensate for.
+        BDPA sample in a liquid nitrogen bath.
+
+        \begin{columns}
+          \begin{column}{0.4\columnwidth}
+            \begin{itemize}
+              \item Excited using microwaves at various frequencies via a directional
+                coupler as in a traditional EPR setup.
+              \item Scanned $B_0$ field
+              \item Compared amplitudes of maximum detected EPR signals
+              \item Resonance frequency shifted
+              \item About gain of 4 for signal amplitude
+            \end{itemize}
+          \end{column}
+          \begin{column}{0.6\columnwidth}
+            \includegraphics[width=\columnwidth]{figures/cryoamplitudes.pdf}
+          \end{column}
+        \end{columns}
+
+        We saw the expected increase in signal amplitude as well as a shift of our
+        impedance match that we have to compensate for.
       \end{block}
 
+      \vskip4.5ex
+
       \begin{block}{\large References \& Acknowledgements}
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-        voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-        clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-        amet.
+        [1] D. Rätzel, D. Hartley, O. Schwartz, P. Haslinger, A Quantum
+        Klystron - Controlling Quantum Systems with Modulated Electron Beams.
+        \textit{Phys. Rev. Research 3, 023247 (2021)}
       \end{block}
 
     \end{column}
