@@ -72,7 +72,7 @@
 
       \begin{block}{\large Electron spin resonance with electron beams}
         The experiment resembles an electron spin resonance experiment. In contrast to
-        classic electron spin resonance setups where systems are excited using microwaves
+        classic electron spin resonance setups where systems are excited using microwaves,
         we use the \textit{non-radiative electromagnetic near-field} of an electron beam.
 
         \begin{columns}
@@ -209,7 +209,8 @@
             \end{itemize}
           \end{column}
           \begin{column}{0.6\columnwidth}
-            \includegraphics[width=\columnwidth]{figures/cryoamplitudes.pdf}
+            % \includegraphics[width=\columnwidth]{figures/cryoamplitudes.pdf}
+            \includegraphics[width=\columnwidth]{figures/signals300_77.pdf}
           \end{column}
         \end{columns}
 
