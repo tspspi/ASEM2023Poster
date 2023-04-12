@@ -33,8 +33,8 @@
             \end{center}
 
             \begin{itemize}
-              \item Linear beam vacuum tube invented in 1935, used as RF and microwave amplifier
-              \item Electron beam velocity modulated by microwaves in a (buncher) cavity
+              \item Linear beam vacuum tube invented in 1935,\\used as RF and microwave amplifier
+              \item Electron beam velocity modulated by\\microwaves in a (buncher) cavity
               \item Velocity modulation causes current modulation
               \item Outcoupling via a catcher cavity
             \end{itemize}
@@ -51,7 +51,7 @@
             \end{center}
 
             \begin{itemize}
-              \item Replace catcher cavity by a 2 level quantum system (QS)
+              \item Replace catcher cavity by a 2 level\\quantum system (QS)
               \item Drive the QS using the \textit{non-radiative electro-magnetic near-field}
                     of the electron beam.
               \begin{itemize}
@@ -91,7 +91,7 @@
               \item Sample: $C_{33}H_{21}$
                 Koelsch radical ($\alpha,\gamma$-Bisdiphenylene-$\beta$-phenylallyl - BDPA)
               \item high spin density (1 free spin per 51 atoms)
-              \item Proof of concept experiment at room temperature (300K) and liquid nitrogen (77K)
+              \item Proof of concept experiment at room\\temperature (300K) and liquid nitrogen (77K)
               % \item Excitation with microwave works at room temperature
               \item Background subtraction by differential measurement
             \end{itemize}
@@ -118,7 +118,7 @@
             \begin{itemize}
               \item $300K$ (room temperature): \\ expected $22.9 nV$ signal, $185.83 \sqrt{Hz}^{-1}$ SNR
               \item $77K$ (liquid nitrogen): \\ expected $89 nV$ signal, $1221.46 \sqrt{Hz}^{-1}$ SNR \\ expected gain $\approx 4$, SNR gain $\approx 7.7$ \\ simple to realize, our choice
-              \item $4K$ (liquid helium): \\ expected $1700 nVV$ signal, \\ $103163.45 \sqrt{Hz}^{-1}$ SNR \\ expected gain $\approx 75$, \\ SNR gain $\approx 649.5$
+              \item $4K$ (liquid helium): \\ expected $1700 nV$ signal, \\ $103163.45 \sqrt{Hz}^{-1}$ SNR \\ expected gain $\approx 75$, \\ SNR gain $\approx 649.5$
             \end{itemize}
           \end{column}
         \end{columns}
@@ -136,8 +136,8 @@
               \item Initial tests by cooling BDPA sample in liquid nitrogen bath
               \item Scanned $B_0$ field, excited with microwaves (no electron beam)
               \item Compared amplitudes at 300K and 77K
-              \item Resonance frequency of match drifts
-              \item SIgnal gain $\approx 4$
+              \item Resonance frequency of impedance match drifts
+              \item Signal gain $\approx 4$
             \end{itemize}
           \end{column}
           \begin{column}{0.35\columnwidth}
@@ -182,8 +182,8 @@
                 board (also including impedance match)
               % \item Printed circuit board with two coils and impedance match
               \item Second microcoil for reference measurements
-              \item BDPA inside microcoil (2 windings, $2.58$ x $1.14mm$
-                    outer diameter, $1.5$ x $0.5mm$ sample area) in milled pocket
+              \item BDPA inside microcoil (2 windings, $2.58mm$ x $1.14mm$
+                    outer diameter, $1.5mm$ x $0.5mm$ sample area) in milled pocket
             \end{itemize}
           \end{column}
           \begin{column}{0.4\columnwidth}
@@ -213,7 +213,7 @@
           \begin{column}{0.4\columnwidth}
             \begin{itemize}
                 \item Electron beam at $2.2 kV$
-                \item deflected at $202 MHz$
+                \item Deflected at $202 MHz$
                 \item Scanning distance to microcoil (\textit{slow position})
                 \item Beam wiggled by $B_m$ field
                 \item Coupling of \textit{near-field} into microcoil
